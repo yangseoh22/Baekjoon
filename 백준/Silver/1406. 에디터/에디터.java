@@ -44,10 +44,8 @@ public class Main {
                     }
                     break;
                 case "P":  //명령어가 P이면,
-                    if(st.hasMoreTokens()){
-                        String newChar = st.nextToken();
-                        iter.add(newChar);  //현재 위치에서 새로운 문자 삽입
-                    }
+                    String newChar = st.nextToken();
+                    iter.add(newChar);  //현재 위치에서 새로운 문자 삽입
                     break;
             }
         }
