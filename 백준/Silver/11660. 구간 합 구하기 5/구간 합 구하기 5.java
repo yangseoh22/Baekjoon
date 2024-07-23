@@ -28,12 +28,6 @@ public class Main {
                 acc[i][j] = arr[i][j] + acc[i-1][j] + acc[i][j-1] - acc[i-1][j-1];
             }
         }
-//        for(int i = 1; i <= n; i++) {
-//            for(int j = 1; j <= n; j++) {
-//                sb.append(acc[i][j]+" ");
-//            }
-//            sb.append("\n");
-//        }
 
         // 합을 구할 범위의 좌표값 입력 받기 (x1, y1, x2, y2)
         for(int i = 0; i < m; i++) {
@@ -53,9 +47,7 @@ public class Main {
 
     // 구간 합 계산 함수
     static int prefixSum(int x1, int y1,int x2, int y2, int[][] arr){
-        int sum = 0;  // 구간 합
-
-        sum = arr[x2][y2] - arr[x2][y1-1] - arr[x1-1][y2] + arr[x1-1][y1-1];
+        int sum = arr[x2][y2] - arr[x2][y1-1] - arr[x1-1][y2] + arr[x1-1][y1-1];
 
         return sum;
     }
