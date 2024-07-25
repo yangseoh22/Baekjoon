@@ -23,8 +23,7 @@ public class Main {
         }
 
         for(int i=0; i<10; i++){
-            if(i==9) sb.append(tmp[i]);
-            else sb.append(tmp[i]).append("\n");
+            sb.append(tmp[i]).append("\n");
         }
 
         System.out.println(sb);
